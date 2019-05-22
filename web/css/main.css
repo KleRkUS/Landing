@@ -1,0 +1,124 @@
+.land__back-img {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background: url("../images/back-min.jpg");
+  width: 100%;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: inline-block; }
+  .land__back-img h1, .land__back-img span {
+    max-width: 40%;
+    color: #fff;
+    display: inline-block; }
+  .land__back-img h1 {
+    font-size: 5em; }
+  .land__back-img span {
+    font-size: 2em; }
+
+h1, h2, h3, h4 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300; }
+
+span, p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+
+html,
+body {
+  height: 100%; }
+
+.navbar {
+  background-color: #000;
+  border: none; }
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px; }
+
+.wrap > .container {
+  padding: 70px 15px 20px; }
+
+.footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding-top: 20px; }
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent; }
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px; }
+
+.not-set {
+  color: #c55;
+  font-style: italic; }
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px; }
+
+a.asc:after {
+  content: "\e151"; }
+
+a.desc:after {
+  content: "\e152"; }
+
+.sort-numerical a.asc:after {
+  content: "\e153"; }
+
+.sort-numerical a.desc:after {
+  content: "\e154"; }
+
+.sort-ordinal a.asc:after {
+  content: "\e155"; }
+
+.sort-ordinal a.desc:after {
+  content: "\e156"; }
+
+.grid-view th {
+  white-space: nowrap; }
+
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999; }
+
+.error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0; }
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+  padding: 15px;
+  border: none; }
+
+@media (max-width: 767px) {
+  .nav li > form > button.logout {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 10px 15px; } }
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+  text-decoration: none; }
+
+.nav > li > form > button.logout:focus {
+  outline: none; }
+
+/*# sourceMappingURL=main.css.map */
