@@ -2,6 +2,6 @@
 
 return [
     'adminEmail' => 'villevald.vladislav.sleep@gmail.com',
-    'senderEmail' => 'noreply@example.com',
-    'senderName' => 'Velek mailer',
+    'senderEmail' => 'villevald.vladislav.sleep@gmail.com',
+    'senderName' => 'Villieyourtech',
 ];

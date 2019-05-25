@@ -1,3 +1,5 @@
 User-agent: *
 Disallow: /
-Allow: Index.php
+Allow: /index.php
+Allow: /bundle.js
+Host: https://villieyour.tech

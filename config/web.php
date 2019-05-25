@@ -5,10 +5,12 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    //'webroot/assets' => '/var/www/html/assets',
+    //'root' => '/var/www/html',
     'name' => 'Velek',
     'sourceLanguage' => 'en-US',
     'language' => 'en-US',
-    'basePath' => dirname(__DIR__),
+    'basePath' => '/var/www/src',
     'bootstrap' => ['log'],
     'timeZone' => 'Europe/Moscow',
     'aliases' => [
@@ -35,7 +37,7 @@ $config = [
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
-            'useFileTransport' => true,
+            'useFileTransport' => false,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

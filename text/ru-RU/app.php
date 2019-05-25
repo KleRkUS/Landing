@@ -9,7 +9,7 @@ foreach ($projects as $project) {
 }
 
 $arr2 = [
-	"Creating and correcting websites, PHP/HTML5/JS. Always online!" => "Создание и поддержка сайтов на PHP/HTML5/JS. Быстрый ответ и качественная работа!"
+	"Creating and correcting websites, PHP/HTML5/JS. Always online!" => "Создание и поддержка сайтов на PHP/HTML5/JS. Быстрый ответ и качественная работа!",
 	"Villevald Vladislav | fullstack web-development" => "Виллевальд Владислав | качественная веб-разработка",
 	"Ice cream" => "Мороженое",
 	"It's just an ice cream, but I am website developer, okay?" => "Это просто мороженое, а я - веб разработчик",
@@ -33,7 +33,7 @@ $arr2 = [
 	"Connect me with your project details!" => "Свяжитесь со мной, указав детали и контактные данные!",
 	"Confirm" => "Отправить",
 	"Past your idea here and I'll reply you!" => "Опишите вашу идею, нажмите ОТПРАВИТЬ и я отвечу вам!",
-	"By the way you can connect my with my socials in footer and view this landing on <b><a href=''>Github</a></b>!" => "К тому же вы можете увидеть исходный код данного сайта на <b><a href=''>Github</a></b>!",
+	"By the way you can connect my with my socials in footer and view this landing on <b><a href='https://github.com/KleRkUS/Landing' class='link'>Github</a></b>!" => "К тому же вы можете увидеть исходный код данного сайта на <b><a href='https://github.com/KleRkUS/Landing' class='link'>Github</a></b>!",
 	"Villevald Vladislav" => "Виллевальд Владислав",
 ];
 

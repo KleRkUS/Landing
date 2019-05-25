@@ -5,7 +5,7 @@ $color-extra-triangle: #712b71;
 $color-light: #fff;
 $color-dark: #414141;
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
 	.main-triangle-1 {
 		border-width: 100px 100px 0 0;
 	}
@@ -42,6 +42,15 @@ $color-dark: #414141;
 }
 
 @media screen and (max-width: 768px) {
+	.part-title {
+		margin-bottom: 15px!important;
+	}
+	.for_adaptive {
+		margin: 20px 0;
+	}
+	.ice_title {
+		display: none!important;
+	}
 	.main-triangle-1 {
 		border-width: 60px 60px 0 0;
 	}
@@ -49,7 +58,7 @@ $color-dark: #414141;
 		border-width: 120px 120px 0 0;
 	}
 	.about {
-		padding: 200px 50px 0 50px;
+		padding: 250px 50px 0 50px;
 	}
 	body {
         font-size: 10px;
@@ -60,14 +69,25 @@ $color-dark: #414141;
 }
 
 @media screen and (max-width: 480px) {
+	.part-title {
+		margin-bottom: 6px!important;
+	}
+	.for_adaptive {
+		margin: 20px 0;
+	}
+	.ice_title {
+		display: none!important;
+	}
 	.main-triangle-1 {
 		border-width: 40px 40px 0 0;
 	}
 	.main-triangle-2 {
 		border-width: 80px 80px 0 0;
 	}
+
 	.about {
-		padding: 100px 20px 0 20px;
+		margin-top: 50px;
+		padding: 150px 20px 0 20px;
 	}
 	body {
 		font-size: 8px;
@@ -78,7 +98,7 @@ $color-dark: #414141;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 h2 {

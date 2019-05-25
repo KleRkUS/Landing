@@ -10,7 +10,6 @@ class MailController extends Controller
 {
 
 	public function	actionIndex() {
-		echo 'lol';
 	}
 
 	public function actionMail()
@@ -19,20 +18,31 @@ class MailController extends Controller
 
 		if (Yii::$app->request->isAjax && $model->load(Yii::$app->request->post()) && $model->validate()) {
 
-			$body = "
-				Имя: $model->name <br>
-				E-mail: $model->email <br>
-				Детали: $model->description
-			";
+				$body = "
+					Новый запрос с сайта\n
+					Имя: $model->name\n
+					E-mail: $model->email\n
+					Детали: $model->description
+				";
 
-			Yii::$app->mailer->compose()->
-			setFrom(Yii::$app->user->identity->email)
-			->setTo('villevald.vladislav.sleep@gmail.com')
-			->setSubject('Новый заказ')
-			->setTextBody('Таки дела')
-			->setHtmlBody($body)->send();
+				$botToken = "";
+ 
+				$website="https://api.telegram.org/bot".$botToken;
+  				$chatId='-377148542';  //Receiver Chat Id
+  				$params=[
+      				'chat_id'=>$chatId,
+      				'text'=> $body,
+  				];
+  				$ch = curl_init($website . '/sendMessage');
+  				curl_setopt($ch, CURLOPT_HEADER, false);
+  				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  				curl_setopt($ch, CURLOPT_POST, 1);
+  				curl_setopt($ch, CURLOPT_POSTFIELDS, ($params));
+  				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+  				$result = curl_exec($ch);
+  				curl_close($ch);
 
-			return "ok";
-		} 
+  				return $result;
+    		} 
 	}
 }

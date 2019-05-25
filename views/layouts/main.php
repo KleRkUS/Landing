@@ -31,6 +31,26 @@ AppAsset::register($this);
     $this->registerLinkTag(['rel' => 'manifest', 'href' => "images/fav/site.webmanifest"]);
     $this->registerLinkTag(['rel' => 'mask-icon', 'href' => "images/fav/safari-pinned-tab.svg", 'color' => '#ffc40d']);
     ?>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(53787118, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/53787118" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124276090-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124276090-2');
+    </script>
+    
+    <meta property="og:title" content="villieyour.tech | Website development" />
+    <meta property="og:image:secure_url" content="https://villieyour.tech/images/preview.png" />
+    <meta property="og:image" content="https://villieyour.tech/images/preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Villieyourtech" />
+    <meta property="og:description" content="Website development in Saint-petersburg" />
+
 </head>
 <body>
 <?php $this->beginBody() ?>
