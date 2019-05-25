@@ -25,7 +25,7 @@ class MailController extends Controller
 					Детали: $model->description
 				";
 
-				$botToken = "";
+				$botToken = "650134237:AAE8pC1NOv-QOgCk0TqUV6jI9p_pNo-266o";
  
 				$website="https://api.telegram.org/bot".$botToken;
   				$chatId='-377148542';  //Receiver Chat Id
